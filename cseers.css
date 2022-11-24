@@ -1,0 +1,3367 @@
+@font-face {
+    font-family: korataki;
+    src: url('./KoratakiRegular/KoratakiRegular.ttf');
+}
+
+html,body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #2c2c2c;
+    font-family: 'Noto Sans', sans-serif;
+    scroll-behavior: smooth;
+    overflow-x: hidden!important;
+    max-width: 100%!important;
+}
+.cs-white{
+    color: #fff;
+}
+h1{
+    font-family: 'korataki',serif;
+}
+.sectionTitle{
+    /* For section titles */
+    font-size: 3.2rem;
+    font-family: 'korataki',serif;
+}
+section{
+    scroll-margin-top: 50px;
+}
+.headerContainer{
+    width: 100%;
+    height: 100vh;
+    background: url('./images/moon-2048727_1920.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.navBar{
+    width: 90%;
+    padding: 2% 5% 2% 5%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+    transition: background 0.4s ease-in-out;
+}
+.mobileNav{
+    display: none;
+}
+.cseersdaoLogoDiv{
+    width: 15%;
+    display: flex;
+    align-items: center;
+}
+.cseersdaoLogoDiv img{
+    width: 100%;
+}
+.menuListDiv{
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.menuList{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menuList li{
+    list-style: none;
+}
+.menuList li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menuList li a:hover{
+    transition: color 0.4s ease-in-out;
+    color: #0CDEFD;
+}
+.navBtnDiv{
+    width: 20%;
+    display: flex;
+}
+.mobileNavBtn{
+    transition: display ease-in-out 0.4s;
+    display: none;
+}
+.lineBar{
+    height: 2px;
+    width: 30px;
+    background-color: #e4e4e4;
+    margin-top: 3px;
+    border-radius: 2px;
+    transition: all ease-in-out 0.4s;
+}
+.joinCSBtn{
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    background-color: transparent;
+    border: 2px solid #fff;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: white;
+    padding: 5% 12%;
+}
+.joinCSBtn:hover, .enterGaway:hover, .joinMoonBtn:hover{
+    transition: all 0.4s ease-in-out;
+    color: #0CDEFD;
+    border: 1px solid #0CDEFD;
+}
+.headerMain{
+    width: 90%;
+    padding: 0 5%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(7, 7, 7, 0.811);
+    color: #fff;
+}
+.headerMain h1{
+    font-size: 3rem;
+    line-height: 1.8rem;
+    margin-bottom: 3rem;
+}
+.headerMain h2{
+    text-align: center;
+    line-height: 2.3rem;
+    width: 60%;
+    font-size: 1.3rem;
+    margin-top: 0;
+    font-weight: 300;
+}
+.collabBtn{
+    text-align: center;
+    margin-top: 3%;
+    text-decoration: none;
+    width: 25%;
+    background: linear-gradient(208.81deg, #0CDEFD 36.84%, #004C5D 56.56%, #4B9487 80.37%);
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 3rem;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: 1px solid #0CDEFD;
+
+}
+.collabBtn:hover{
+    -moz-transition: background 0.4s ease-in-out;
+    -o-transition: background 0.4s ease-in-out;
+    -webkit-transition: background 0.4s ease-in-out;
+    transition: background 0.4s ease-in-out;
+    background: #004C5D;
+}
+.headerMain small{
+    color: #565656;
+    margin-top: 10%;
+}
+.fixedAstronaut, #fixedAstro{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5%;
+    top:82%;
+    left: 47%;
+    -moz-transition: width 1.7s ease-in-out;
+    -o-transition: width 1.7s ease-in-out;
+    -webkit-transition: width 1.7s ease-in-out;
+    transition: width 1.3s ease-in-out;
+}
+.fixedAstronaut img{
+    width: 90%;
+}
+.titleDivCenter{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.keyPoints,.recentCollabs{
+    height: 90vh;
+    width: 90%;
+    padding: 0 5% 7% 5% ;
+}
+ .mobileAstro{
+     opacity: 0;
+    width: 10%;
+    position:absolute;
+    left: 45%;
+    bottom: -50%;
+    transition: display ease-in-out 0.3s;
+}
+.doubleKeyPoints{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.centerNote{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.keyPointNoteDiv{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 4%;
+}
+.bigKeyNoteDiv{
+    width: 100%;
+    display: flex;
+    align-items: baseline;
+}
+.keyPointNoteDiv h3{
+    font-size: 1.9rem;
+    color: #696969;
+    line-height: 2rem;
+    margin-bottom: 2%;
+}
+.keyPointNoteDiv h1{
+    font-size: 6rem;
+    font-family: 'korataki', serif;
+    color: #fff;
+    line-height: 3rem;
+    margin-top: 8%;
+}
+.sideSign{
+    font-size: 6rem;
+    font-family: 'korataki', serif;
+    color: #fff;
+    line-height: 3rem;
+}
+.right{
+    text-align: right;
+    justify-content: right;
+}
+.forTop{
+    margin-bottom: 1%;
+}
+.containDiv{
+    width: 100%;
+}
+.singleKeyNote{
+    width: 30%;
+}
+.recentCollabs{
+    background-color: #121111;
+    padding-bottom: 12%;
+}
+.titleDivLeft{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding-top: 3%;
+}
+.hangingRecent{
+    position: absolute;
+    width: 10%;
+    right: 0%;
+    margin-top: 1%;
+}
+.collabContainer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2%;
+}
+.collabProject{
+    width: 25%;
+    padding: 2% 2.5%;
+    background-color: #2c2c2c;
+    border-radius: 20px;
+}
+.projectPfp{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border: 1px solid #0CDEFD;
+}
+.collabProject{
+    font-family: 'Noto Sans', sans-serif;
+}
+.collabProject h3{
+    color: #fff;
+    font-weight: 400;
+}
+.collabProject h4{
+    color: #a7a7a7;
+}
+.collabProject p{
+    color: #b8b8b8;
+    font-weight: 300;
+    line-height: 1.4rem;
+}
+#projectPfp1{
+    background: url('./images/Gossamer.webp');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.projectTwitter{
+    color: #a7a7a7;
+    margin-top: 3%;
+}
+.projectTwitter:hover p{
+    transition: all ease-in-out 0.4s;
+    color: #fff;
+}
+.enterGawayDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.enterGaway{
+    width: 80%;
+    text-decoration: none;
+    padding: 5%;
+    border: 2px #fff solid;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #fff;
+    margin-top: 5%;
+}
+.collabWusDiv{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.workWithUs{
+    width: 90%;
+    padding: 1% 5%;
+}
+
+.spiralHang{
+    position: absolute;
+    width: 7%;
+    left: -1%;
+    margin-bottom: 10%;
+}
+
+.whyDiv{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 7%;
+    align-items: center;
+}
+
+.whyNote, .whyImg{
+    width: 50%;
+}
+
+.whyNote{
+    text-align: left;
+}
+
+.whyNote h2{
+    font-size: 2.6rem;
+    color: #fff;
+    font-weight: 400;
+}
+.whyNote p{
+    font-size: 1.3rem;
+    color: #b3b3b3;
+    font-weight: 300;
+    line-height: 2.3rem;
+}
+.whyNote a{
+    color: #0CDEFD;
+    text-decoration: none;
+}
+.whyNote a:hover{
+    color: #02b9d5;
+}
+.whyImg img{
+    width: 65%;
+}
+.astroRocketDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+.joinMoonContainer{
+    display: flex;
+    width: 90%;
+    padding: 5%;
+    justify-content: center;
+    align-items: center;
+}
+.joinMoonMain{
+    width: 100%;
+    display: flex;
+    background: url('./images/moon\ with\ us-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: 3%;
+    padding-bottom: 5%;
+    border-radius: 30px;
+}
+
+.moonImageDiv,.joinNoteDiv{
+    width: 50%;
+}
+
+.moonImageDiv img{
+    width: 80%;
+    margin-top: -150px;
+    margin-left: -70px;
+}
+.joinNoteDiv h2{
+    font-family: 'korataki', sans-serif;
+    font-size: 2.5rem;
+    color: #fff;
+}
+.joinNoteDiv p{
+    color: #b3b3b3;
+    width: 90%;
+    line-height: 2rem;
+}
+.joinMoonBtnDiv{
+    width: 100%;
+    display: flex;
+}
+.joinMoonBtn{
+    width: 30%;
+    text-decoration: none;
+    padding: 3%;
+    border: 2px #fff solid;
+    text-align: center;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+    color: #fff;
+    margin-top: 5%;
+}
+.web3StoriesDiv{
+    width: 90%;
+    padding: 5%;
+    background-color: #061516;
+}
+
+.blogPostsDiv{
+    display:flex;
+    width:  100%;
+    padding: 5% 0;
+    justify-content: space-between;
+}
+
+.blogPost{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+.bgPostImg{
+    width: 100%;
+    height: 200px;
+}
+
+.blgImg1{
+    background: url('./images/sbf-blg-img');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.blgImg2{
+    background: url('./images/solpepe-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.blgImg3{
+    background: url('./images/cr7-blg-img.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.blogDate{
+    font-size: 0.8rem;
+    color: #696969;
+    margin-top: 0;
+}
+
+.blogInfoDiv{
+    width: 90%;
+    padding: 3% 5% 12% 5%;
+    background-color: #2c2c2c;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.blogInfoDiv h3{
+    font-size: 1.7rem;
+    color: #fff;
+    font-weight: 400;
+    margin-bottom: 1%;
+}
+
+.blogInfoDiv p{
+    color: #b3b3b3;
+    line-height: 2rem;
+    margin-bottom: 5%;
+}
+.moreStories{
+    width: 30%;
+    padding: 1.5% 0;
+}
+
+.airdopsAndTwitterDiv{
+    width: 100%;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+}
+.airdropDiv{
+    width: 50%;
+    padding: 5%;
+    height: 500px;
+    overflow-y: scroll;
+}
+.twitterUpdatesDiv{
+    width: 35%;
+    background-color: #121111;
+    padding: 5% 2.5%;
+}
+.airdropDiv h3{
+    font-size: 1.8rem;
+    font-family: 'korataki', sans-serif;
+    color: #fff;
+    margin-bottom: 8%;
+}
+.airdropTabs{
+    width: 100%;
+    display: flex;
+    padding: 5% 0;
+    justify-content: space-between;
+    text-decoration: none;
+    border-radius: 20px;
+}
+.airdropTabs:hover{
+    transition: all ease-in-out 0.2s;
+    background: #061516;
+    width: 90%;
+    padding: 5%;
+}
+
+.airdropImg{
+    width: 35%;
+    padding: 10% 0;
+    background: url('./images/starknet.jfif');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
+}
+
+.adropbgImg1{
+    background: url('./images/bravoo.jfif');
+}
+.adropbgImg2{
+    background: url('./images/myswap.png');
+}
+
+.adropbgImg1, .adropbgImg2, .adropbgImg3, .adropbgImg4, .adropbgImg5, .adropbgImg6,footer{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.airdropNotesDiv{
+    width: 60%;
+}
+.airdropNotesDiv p{
+    color: #b3b3b3;
+    font-weight: 300;
+    line-height: 2rem;
+    margin-bottom: 4%;
+}
+.forCategory{
+    width: 100%;
+    display: flex;
+    padding: 2% 0;
+}
+
+.retroactive, .twitterEngagment, .fillForm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2% 4%;
+    border-radius: 8px;
+    color: #121111;
+    margin: 0 2%;
+    font-size: 0.8rem;
+}
+.retroactive{
+    background-color: #fc5aa6;
+}
+.twitterEngagment{
+    background-color: #02b9d5;
+}
+.fillForm{
+    background-color: #0c9dfd;
+}
+footer{
+    width: 90%;
+    background: url('./images/footer-bg.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 7% 5% 1% 5%;
+}
+.footerMenuList{
+    flex-direction: column;
+    align-items:flex-start;
+    padding: 0;
+}
+.footerMenuList li{
+    margin-bottom: 3%;
+}
+.socialMediaDiv a:hover{
+    transition: color 0.3s ease-in-out;
+    color: #0CDEFD;
+}
+.socialMediaDiv{
+    width: 20%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3%;
+}
+.socialMediaDiv a{
+    color: #fff;
+    font-size: 2rem;
+}
+.copyRight{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 6%;
+    color: #b3b3b3;
+}
+
+.copyRight a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+
+.copyRight a:hover{
+    transition: all ease-in-out 0.3s;
+    color: #0CDEFD;
+}
+
+.fa-heart{
+    margin: 0 1%;
+}
+
+.twitterUpdatesDiv{
+    overflow-y: scroll;
+    height: 500px;
+}
+.timeline-TweetList li{
+    margin-bottom: 3%!important;
+}
+
+body::-webkit-scrollbar{
+    width: 20px;
+}
+
+
+.twitterUpdatesDiv::-webkit-scrollbar-thumb, .airdropDiv::-webkit-scrollbar-thumb{
+    background:#0c9dfd;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background-color: #e4e4e4;
+    border-radius: 500px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-image: linear-gradient(180deg, #0CDEFD 0%, #004C5D 99%);
+  }
+
+
+  /*Media Query for landing page 1024-1230*/
+
+  @media screen 
+  and (min-device-width: 1024px) 
+  and (max-device-width: 1230px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+      body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+          overflow-x: hidden!important;
+      }
+      .headerMain h1 {
+          font-size: 2rem;
+          margin-bottom: 1.8rem;
+          margin-top: 7%;
+      }
+      .headerMain h2 {
+          font-size: 1.1rem;
+      }
+     
+      .collabBtn {
+          width: 35%;
+      }
+      .headerMain small {
+          margin-top: 6%;
+      }
+      .fixedAstronaut, #fixedAstro{
+          display: none!important;
+      }
+      .recentCollabs,.workWithUs{
+          overflow-y: hidden;
+      }
+      .keyPointNoteDiv h3{
+          font-size: 1.3rem;
+      }
+      .keyPointNoteDiv h1, .sideSign {
+          font-size: 4rem;
+      }
+      .sectionTitle {
+          font-size: 2.4rem;
+      }
+      .mobileAstro{
+          transition: opacity ease-in-out 0.4s ;
+          opacity: 1;
+      }
+      .keyPoints, .recentCollabs {
+          height: auto;
+      }
+      .whyNote h2 {
+          font-size: 2.1rem;
+      }
+      .whyNote p {
+          font-size: 1rem;
+      }
+      .whyImg img {
+          width: 60%;
+      }
+      .joinMoonContainer {
+          margin-top: 7%;
+      }
+      .joinNoteDiv h2 {
+          font-size: 2.05rem;
+      }
+      .joinNoteDiv p {
+          font-size: 0.9rem;
+      }
+      .moonImageDiv img {
+          margin-top: 0;
+          margin-left: 2%;
+      }
+      .joinMoonBtn {
+          width: 40%;
+      }
+      .blogInfoDiv h3 {
+          font-size: 1.4rem;
+      }
+      .blogInfoDiv p {
+          font-size: 0.9rem;
+      }
+      .retroactive, .twitterEngagment, .fillForm{
+          font-size: 0.7rem;
+      }
+      
+  }
+
+  @media screen 
+  and (min-width: 1024px) 
+  and (max-width: 1230px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .headerMain h1 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 7%;
+    }
+    .headerMain h2 {
+        font-size: 1.1rem;
+    }
+   
+    .collabBtn {
+        width: 35%;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1.3rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 4rem;
+    }
+    .sectionTitle {
+        font-size: 2.4rem;
+    }
+    .mobileAstro{
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyNote h2 {
+        font-size: 2.1rem;
+    }
+    .whyNote p {
+        font-size: 1rem;
+    }
+    .whyImg img {
+        width: 60%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+    }
+    .moonImageDiv img {
+        margin-top: 0;
+        margin-left: 2%;
+    }
+    .joinMoonBtn {
+        width: 40%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+  }
+
+  /*Media Query for landing page 900-1023*/
+
+@media screen 
+and (min-device-width: 900px) 
+and (max-device-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .headerMain h1 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 7%;
+    }
+    .headerMain h2 {
+        font-size: 1.1rem;
+    }
+   
+    .collabBtn {
+        width: 35%;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1.3rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 4rem;
+    }
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+    .mobileAstro{
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyNote h2 {
+        font-size: 2.1rem;
+    }
+    .whyNote p {
+        font-size: 1rem;
+    }
+    .whyImg img {
+        width: 65%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+    }
+    .moonImageDiv img {
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .joinMoonBtn {
+        width: 40%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabProject {
+        width: 40%;
+        padding: 2% 2.5%;
+        margin-right: 1%;
+        margin-bottom: 2%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+}
+
+@media screen 
+and (min-width: 900px) 
+and (max-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .headerMain h1 {
+        font-size: 2rem;
+        margin-bottom: 1.8rem;
+        margin-top: 7%;
+    }
+    .headerMain h2 {
+        font-size: 1.1rem;
+    }
+   
+    .collabBtn {
+        width: 35%;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1.3rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 4rem;
+    }
+    .sectionTitle {
+        font-size: 2.2rem;
+    }
+    .mobileAstro{
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyNote h2 {
+        font-size: 2.1rem;
+    }
+    .whyNote p {
+        font-size: 1rem;
+    }
+    .whyImg img {
+        width: 65%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+    }
+    .moonImageDiv img {
+        margin-top: 10%;
+        margin-left: 2%;
+    }
+    .joinMoonBtn {
+        width: 40%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabProject {
+        width: 40%;
+        padding: 2% 2.5%;
+        margin-right: 1%;
+        margin-bottom: 2%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+}
+
+
+  /*Media Query for landing page 767-899*/
+
+  @media screen 
+  and (min-device-width: 767px) 
+  and (max-device-width: 899px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 22%;
+    }
+    .menuListDiv {
+        width: 40%;
+    }
+    .navBtnDiv {
+        display: flex;
+        width: 25%;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+        margin-top: 7%;
+    }
+    .headerMain h2 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        width: 70%;
+    }
+   
+    .collabBtn {
+        width: 35%;
+        font-size: 1.3rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 3rem;
+    }
+    .sectionTitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .mobileAstro{
+        bottom: -30%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 75%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+   
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+    }
+    .blogPost {
+        width: 45%;
+        margin-right: 1%;
+        margin-bottom: 3%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 50%;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabProject {
+        width: 40%;
+        padding: 2% 2.5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+  }
+
+  @media screen 
+and (min-width: 767px) 
+and (max-width: 899px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 22%;
+    }
+    .menuListDiv {
+        width: 40%;
+    }
+    .navBtnDiv {
+        display: flex;
+        width: 25%;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.8rem;
+        margin-bottom: 1.8rem;
+        margin-top: 7%;
+    }
+    .headerMain h2 {
+        font-size: 1.1rem;
+        line-height: 2rem;
+        width: 70%;
+    }
+   
+    .collabBtn {
+        width: 35%;
+        font-size: 1.3rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 3rem;
+    }
+    .sectionTitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .mobileAstro{
+        bottom: -30%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 75%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+   
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+    }
+    .blogPost {
+        width: 45%;
+        margin-right: 1%;
+        margin-bottom: 3%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 50%;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabProject {
+        width: 40%;
+        padding: 2% 2.5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+}
+
+/*Media Query for landing page 600-766*/
+
+@media screen 
+and (min-device-width: 600px) 
+and (max-device-width: 766px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 30%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.8rem;
+        margin-top: 13%;
+    }
+    .headerMain h2 {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        width: 70%;
+    }
+   
+    .collabBtn {
+        width: 65%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 3rem;
+    }
+    .sectionTitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .mobileAstro{
+        bottom: -15%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 40%;
+    }
+    .socialMediaDiv{
+        width: 30%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 50%;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+}
+
+@media screen 
+and (min-width: 600px) 
+and (max-width: 766px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 30%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.8rem;
+        margin-top: 13%;
+    }
+    .headerMain h2 {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+        width: 70%;
+    }
+   
+    .collabBtn {
+        width: 65%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 1rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 3rem;
+    }
+    .sectionTitle {
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+    .mobileAstro{
+        bottom: -15%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+        margin-top: 10%;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 2.05rem;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 40%;
+    }
+    .socialMediaDiv{
+        width: 30%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 50%;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+}
+
+@media screen 
+and (min-device-width: 450px) 
+and (max-device-width: 599px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 37%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 13%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        bottom: -5%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
+
+@media screen 
+and (min-width: 450px) 
+and (max-width: 599px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 37%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1.3rem;
+        text-decoration: none;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 13%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.7rem;
+        line-height: 2.5rem;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        bottom: -5%;
+        transition: opacity ease-in-out 0.4s ;
+        opacity: 1;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
+
+@media screen 
+and (min-width: 350px) 
+and (max-width: 449px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 45%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-right: 3%;
+    }
+    .right{
+        text-align: left;
+        justify-content: left;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+    }
+    .doubleKeyPoints {
+        flex-direction: column;
+        align-items: left;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        display: none;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
+
+@media screen 
+and (min-device-width: 350px) 
+and (max-device-width: 449px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 45%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-right: 3%;
+    }
+    .right{
+        text-align: left;
+        justify-content: left;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+    }
+    .doubleKeyPoints {
+        flex-direction: column;
+        align-items: left;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        display: none;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
+
+@media screen 
+and (min-device-width: 250px) 
+and (max-device-width: 349px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 45%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-right: 3%;
+    }
+    .right{
+        text-align: left;
+        justify-content: left;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+    }
+    .doubleKeyPoints {
+        flex-direction: column;
+        align-items: left;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        display: none;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
+
+@media screen 
+and (min-width: 250px) 
+and (max-width: 349px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    body, .recentCollabs, .workWithUs, .web3StoriesDiv{
+        overflow-x: hidden!important;
+    }
+    .cseersdaoLogoDiv {
+        width: 45%;
+    }
+    .menuListDiv {
+       display: none;
+    }
+    .navBtnDiv {
+        display: none;
+    }
+    .navBar{
+        padding: 5%;
+    }
+    .mobileNav{
+        transition: all ease-in-out 0.4s;
+        position: fixed;
+        display: none;
+        transition: all ease-in-out 0.4s;
+        flex-direction: column;
+        width: 90%;
+        padding: 5%;
+        background-color: rgb(25, 25, 25);
+        z-index: 1;
+    }
+    .mobilemenuList a{
+        color: #fff;
+        font-size: 1rem;
+        text-decoration: none;
+        font-weight: 300;
+    }
+    .mobilemenuList a:hover{
+        transition: color ease-in-out 0.4s;
+        color: #02b9d5;
+    }
+    .mobilemenuListDiv{
+        margin-top: 5%;
+        margin-bottom: 7%;
+    }
+    .mobilenavBtnDiv{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .mobilenavBtnDiv .joinCSBtn{
+        width: 50%;
+        padding: 3% 12%;
+    }
+    .mobilemenuList li{
+        list-style-type: none;
+        width: 100%;
+        padding: 5% 0;
+    }
+    .mobileNavBtn{
+        display: block;
+    }
+    .headerMain,.headerContainer {
+        height: auto;
+    }
+    .headerMain{
+        padding: 13% 5%;
+    }
+    .headerMain h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.6rem;
+        margin-top: 20%;
+        text-align: center;
+    }
+    .headerMain h2 {
+        font-size: 0.8rem;
+        line-height: 1.4rem;
+        width: 90%;
+    }
+   
+    .collabBtn {
+        width: 75%;
+        font-size: 1rem;
+    }
+    .headerMain small {
+        margin-top: 6%;
+    }
+    .fixedAstronaut, #fixedAstro{
+        display: none!important;
+    }
+    .recentCollabs,.workWithUs{
+        overflow-y: hidden;
+    }
+    .keyPointNoteDiv{
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 90%;
+    }
+    .keyPointNoteDiv h3{
+        font-size: 0.8rem;
+        line-height: 1rem;
+        margin-right: 3%;
+    }
+    .right{
+        text-align: left;
+        justify-content: left;
+    }
+    .keyPointNoteDiv h1, .sideSign {
+        font-size: 2rem;
+    }
+    .sectionTitle {
+        font-size: 1.3rem;
+        line-height: 2.1rem;
+    }
+    .doubleKeyPoints {
+        flex-direction: column;
+        align-items: left;
+    }
+    .hangingRecent {
+        width: 15%;
+    }
+    .spiralHang {
+        width: 12%;
+    }
+    .mobileAstro{
+        display: none;
+    }
+    .keyPoints, .recentCollabs {
+        height: auto;
+    }
+    .whyDiv {
+        margin-top: 4%;
+        flex-direction: column;
+    }
+    .whyImg{
+        width: 100%;
+        margin-top: 7%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .whyNote{
+        width: 100%;
+        margin-top:3% ;
+    }
+    .reverse-column{
+        flex-direction: column-reverse;
+    }
+    .whyNote h2 {
+        font-size: 1.9rem;
+    }
+    .whyNote p {
+        font-size: 0.8rem;
+        line-height: 1.7rem;
+    }
+    .whyImg img {
+        width: 55%;
+    }
+    .joinMoonContainer {
+        margin-top: 7%;
+    }
+    .joinNoteDiv h2 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    .joinNoteDiv p {
+        font-size: 0.9rem;
+        line-height: 1.8rem;
+    }
+    .moonImageDiv{
+        display: none;
+    }
+    .moonImageDiv img {
+        margin-top: 35%;
+        margin-left: 2%;
+    }
+    .joinNoteDiv{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .joinMoonBtnDiv {
+        align-items: center;
+        justify-content: center;
+    }
+    .joinMoonBtn {
+        width: 50%;
+    }
+    .footerBtn{
+        display: flex;
+        width: 60%;
+        margin: 12% 0;
+    }
+    .socialMediaDiv{
+        width: 60%;
+    }
+    .blogPostsDiv {
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .blogPost {
+        width: 100%;
+        margin-right: 1%;
+        margin-bottom: 7%;
+    }
+    .blogInfoDiv h3 {
+        font-size: 1.4rem;
+    }
+    .blogInfoDiv p {
+        font-size: 0.9rem;
+    }
+    .moreStories {
+        width: 65%;
+        padding: 3% 0;
+    }
+    .airdropImg {
+        width: 100%;
+        height: 100px;
+    }
+    .airdopsAndTwitterDiv {
+        flex-direction: column;
+    }
+    .airdropTabs{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .airdropNotesDiv{
+        width: 100%;
+    }
+    .airdropDiv {
+        width: 90%;
+        margin-bottom: 5%;
+    }
+    .twitterUpdatesDiv {
+        width: 95%;
+    }
+    .retroactive, .twitterEngagment, .fillForm{
+        font-size: 0.7rem;
+    }
+    .collabContainer{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .collabProject {
+        width: 90%;
+        padding: 4% 5%;
+        margin-right: 1%;
+        margin-bottom: 5%;
+    }
+    .collabContainer{
+        flex-wrap: wrap!important;
+    }
+    .footerMenuList{
+        flex-direction: row;
+        width: 60%;
+        margin-bottom: 5%;
+    }
+    .copyRight {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+    .fa-heart {
+        margin: 4% ;
+    }
+}
