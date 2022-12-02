@@ -1,0 +1,119 @@
+.aboutHeader{
+    width: 90%;
+    padding: 0 5%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(7, 7, 7, 0.56);
+    height: 100vh;
+}
+.aboutHeader h1{
+    font-size: 4rem;
+    color: #fff;
+}
+.scrollDownAbout{
+    text-decoration: none;
+    color: #b8b8b8;
+    font-size: 1.6rem;
+}
+.aboutContainer{
+    width: 100%;
+    height: 100vh;
+}
+.misionContainer{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-start;
+    overflow-y: hidden;
+    position: sticky;
+    z-index: 1;
+    top: 0;
+}
+.missionDiv{
+    overflow-y: scroll;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    width: 50%;
+    background: #121212;
+    padding-top: 2%;
+}
+.missionDiv::-webkit-scrollbar-thumb{
+    background: #b8b8b8;
+}
+.greenBg{
+    background-color: #004C5D;
+}
+.missionImgDiv{
+    width: 50%;
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url('./images/trippyAstronaut.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.aboutTitle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    width: 100%;
+    background: #12121293;
+}
+.aboutTitle h1{
+    font-size: 3rem;
+    color: #fff;
+    margin-bottom: 1%;
+}
+.aboutTitle h3{
+    font-size: 1.7rem;
+    color: #b8b8b8;
+    margin-top: 1%;
+}
+
+.missionTextDiv{
+    width: 80%;
+    padding: 10%;
+    margin: 0;
+    height: 600px;
+}
+
+.missionTextDiv h4{
+    color: #b8b8b8;
+    line-height: 1.4rem;
+    margin-bottom: 1%;
+}
+.missionTextDiv h1{
+    color: #fff;
+    font-weight: 400;
+    margin-top: 2%;
+}
+
+.missionTextDiv p{
+    color: #fff;
+    font-weight:lighter;
+    line-height: 1.7rem;
+}
+
+.visionDiv{
+    background-color: #004C5D;
+}
+
+.containerDiv{
+    width: 90%;
+    padding: 5%;
+}
+.containerDiv h1{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+}

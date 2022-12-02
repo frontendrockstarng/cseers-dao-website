@@ -16,7 +16,7 @@ counters.forEach( counter => {
      
    }
    window.addEventListener("scroll", function(){
-       if(this.window.scrollY >= 400){
+       if(this.window.scrollY >= 300){
         animate();
        }
       if(this.window.scrollY >=900 && this.window.scrollY <= 6000){

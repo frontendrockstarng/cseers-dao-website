@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About CSDAO</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./aos-master/dist/aos.css" />
+    <link rel="stylesheet" href="./cseers.css" />
+    <link rel="stylesheet" href="./about.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+</head>
+<body>
+    <section class="mobileNav">
+        <div class="mobilemenuListDiv">
+            <ul class="mobilemenuList">
+                <li><a href="about.html">About</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="projects.html">Projects</a></li>
+            </ul>
+        </div>
+        <div class="mobilenavBtnDiv">
+            <a href="#" class="joinCSBtn">Join CSeersDAO</a>
+        </div>
+    </section>
+    <section class="aboutContainer" id="mainHeader"  >
+        <nav class="navBar" id="navBar">
+            <a href="index.html" class="cseersdaoLogoDiv"><img src="./images/cseersdaoLogo.png" alt="csserdao logo"></a>
+            <div class="menuListDiv">
+                <ul class="menuList">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                </ul>
+            </div>
+            <div class="navBtnDiv">
+                <a href="#" class="joinCSBtn">Join CSeersDAO</a>
+            </div>
+            <div class="mobileNavBtn">
+                <div class="lineBar" id="topLineBar"></div>
+                <div class="lineBar middleLineBar"></div>
+                <div class="lineBar" id="bottomLineBar"></div>
+            </div>
+        </nav>
+        <section class="ourStory" data-aos="fade-in" data-aos-duration="700" id="misionDiv">
+            <div class="misionContainer">
+                <div class="missionImgDiv" data-aos="fade-up" data-aos-duration="600" >
+                    <div class="aboutTitle">
+                        <h1 data-aos="fade-in">About us</h1>
+                        <h3 data-aos="fade-in">Who we are & our story</h3>
+                    </div>
+                </div>
+                <div class="missionDiv">
+                    <div class="missionTextDiv"> <h4>We are on mission to</h4>
+                        <h1 >turn web3 illeterates to experts</h1>
+                        <p>Cseers is a multitudinous web3 organisation that travels back and forth through various aspects of crypto and blockchain technology, for the primary purpose of liberating members financially. Open to all, free for all.</p>
+                        <p>Only 3.5% of the young population in Africa are well-acquainted with the web3, NFT & blockchain technology. So our goal here is to educate more young people and nuture them well enough for them to earn passive income via NFTS, Defi, and crypto as a whole.</p>
+                        <p>Furthermore, CSeersDAO has a strictly no-fee web3 policy where interested people have a chance to gain knowledge on web3 & crypto for free.</p>
+                    </div>
+                    <div class="missionTextDiv greenBg">
+                        <h1 >turn web3 illeterates to experts</h1>
+                        <p>Cseers is a multitudinous web3 organisation that travels back and forth through various aspects of crypto and blockchain technology, for the primary purpose of liberating members financially. Open to all, free for all.</p>
+                        <p>Only 3.5% of the young population in Africa are well-acquainted with the web3, NFT & blockchain technology. So our goal here is to educate more young people and nuture them well enough for them to earn passive income via NFTS, Defi, and crypto as a whole.</p>
+                        <p>Furthermore, CSeersDAO has a strictly no-fee web3 policy where interested people have a chance to gain knowledge on web3 & crypto for free.</p>
+                    </div>
+                    <div class="missionTextDiv storyDiv">
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+
+   
+
+    <script>
+        window.addEventListener("scroll",function(){
+            if(this.window.scrollY>=100){
+                this.document.getElementById("navBar").style.background = "#191919"
+            }
+            else{
+                this.document.getElementById("navBar").style.background = "transparent"
+            }
+        })
+    </script>
+    <script src="./style.js"></script>
+    <script src="./loadCount.js"></script>
+    <script src="./aos-master/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
