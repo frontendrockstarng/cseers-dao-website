@@ -1,3 +1,6 @@
+@import url('./node_modules/sal.js/dist/sal.css');
+@import url('./node_modules/@splidejs/splide/dist/css/splide-core.min.css');
+
 .aboutHeader{
     width: 90%;
     padding: 0 5%;
@@ -84,7 +87,6 @@
     width: 80%;
     padding: 10%;
     margin: 0;
-    height: 600px;
 }
 
 .missionTextDiv h4{
@@ -96,6 +98,7 @@
     color: #fff;
     font-weight: 400;
     margin-top: 2%;
+    font-size: 2rem;
 }
 
 .missionTextDiv p{
@@ -116,4 +119,110 @@
     width: 100%;
     text-align: center;
     color: #fff;
+}
+
+.greenBg h1{
+    font-size: 1.8rem;
+}
+
+
+.storyDiv{
+    background-color: #2c2c2c;
+}
+.founderQuote{
+    font-style: italic;
+    font-size: 0.9rem;
+    color: #b8b8b8;
+    font-weight: 200;
+    line-height: 1.6rem;
+    text-align: center;
+}
+.linkGen{
+    color: #b8b8b8;
+    text-decoration: none;
+}
+.linkGen:hover{
+    transition: all 300ms ease-in-out;
+    color: #0CDEFD;
+}
+.citeQuote{
+    text-align: center;
+}
+.splide__arrow,.splide__pagination {
+    display: none!important;
+}
+.splide__slide{
+    background-color: #121212;
+    padding: 5%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+.splide__slide a{
+    color: #ffffff;
+    font-weight: 400;
+    margin: 5% 0 0 0;
+    text-decoration: none;
+}
+.splide__slide p{
+    color: #b8b8b8;
+    font-weight: 200;
+    margin-top: 2%;
+}
+.splide__slide a:hover{
+    transition: color ease-in-out 0.4s;
+    color: #0CDEFD;
+}
+.splide__slide:focus{
+    transition: background ease-in 0.3s;
+    background: #004C5D;
+}
+.pfpContainer{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 4%;
+}
+.pfp1{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url('https://pbs.twimg.com/profile_images/1545848501707460608/7VFxxDhm_400x400.jpg');
+}
+.pfp2{
+    background: url('https://pbs.twimg.com/profile_images/1545383676845891585/3NuTFxzW_400x400.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp3{
+    background: url('https://pbs.twimg.com/profile_images/1435266922749247490/_ZVQB-RF_400x400.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp4{
+    background: url('https://pbs.twimg.com/profile_images/1598167474708570112/CoezELsC_400x400.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp5{
+    background: url('https://pbs.twimg.com/profile_images/1594561692859604996/CEUOGP3u_400x400.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.pfp6{
+    background: url('https://pbs.twimg.com/profile_images/1592407123329269761/6prM0_lo_400x400.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.meetTeamTitle{
+    margin-bottom: 5%;
 }
