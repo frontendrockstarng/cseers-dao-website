@@ -1,0 +1,23 @@
+{
+  "name": "cseersdao-website",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "sal.js": "^0.8.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/frontendrockstarng/cseers-dao-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/frontendrockstarng/cseers-dao-website/issues"
+  },
+  "homepage": "https://github.com/frontendrockstarng/cseers-dao-website#readme"
+}
