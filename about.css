@@ -226,3 +226,532 @@
 .meetTeamTitle{
     margin-bottom: 5%;
 }
+
+ /*Media Query for landing page 1024-1230*/
+ @media screen 
+ and (min-device-width: 1024px) 
+ and (max-device-width: 1230px) 
+ and (-webkit-min-device-pixel-ratio: 1) {
+    .missionTextDiv h1 {
+        font-size: 1.6rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.9rem;
+    }
+ }
+ @media screen 
+ and (min-width: 1024px) 
+ and (max-width: 1230px) 
+ and (-webkit-min-device-pixel-ratio: 1) {
+    .missionTextDiv h1 {
+        font-size: 1.6rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.9rem;
+    }
+ }
+
+  /*Media Query for landing page 900-1023*/
+@media screen 
+and (min-device-width: 900px) 
+and (max-device-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+}
+@media screen 
+and (min-width: 900px) 
+and (max-width: 1023px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+}
+
+/*Media Query for landing page 767-899*/
+
+@media screen 
+and (min-device-width: 767px) 
+and (max-device-width: 899px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .splide__slide p {
+        font-size: 0.8rem;
+    }
+    .missionImgDiv {
+        width: 40%;
+    }
+    .missionDiv{
+        width: 60%;
+    }
+    .aboutTitle h1 {
+        font-size: 2.3rem;
+    }
+    .aboutTitle h3 {
+        font-size: 1.4rem;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+}
+@media screen 
+and (min-width: 767px) 
+and (max-width: 899px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .splide__slide p {
+        font-size: 0.8rem;
+    }
+    .missionImgDiv {
+        width: 40%;
+    }
+    .missionDiv{
+        width: 60%;
+    }
+    .aboutTitle h1 {
+        font-size: 2.3rem;
+    }
+    .aboutTitle h3 {
+        font-size: 1.4rem;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+}
+
+/*Media Query for landing page 600-766*/
+
+@media screen 
+and (min-device-width: 600px) 
+and (max-device-width: 766px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    .aboutTitle h1 {
+        font-size: 2.3rem;
+    }
+    .aboutTitle h3 {
+        font-size: 1.4rem;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    }
+}
+@media screen 
+and (min-width: 600px) 
+and (max-width: 766px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+    .aboutTitle h1 {
+        font-size: 2.3rem;
+    }
+    .aboutTitle h3 {
+        font-size: 1.4rem;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    }
+}
+
+@media screen 
+and (min-device-width: 450px) 
+and (max-device-width: 599px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 15%;
+    }
+}
+
+@media screen 
+and (min-width: 450px) 
+and (max-width: 599px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 1.3rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.8rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 15%;
+    }
+}
+
+@media screen 
+and (min-width: 350px) 
+and (max-width: 449px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 1rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.7rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 15%;
+    }
+    .airdropDiv h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen 
+and (min-device-width: 350px) 
+and (max-device-width: 449px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 1rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.7rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 15%;
+    }
+    .airdropDiv h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen 
+and (min-device-width: 250px) 
+and (max-device-width: 349px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 1.3rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 1rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 1rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.7rem;
+    }
+    .founderQuote {
+        font-size: 0.8rem;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 15%;
+    }
+    .airdropDiv h3 {
+        font-size: 1.4rem;
+    }
+}
+
+@media screen 
+and (min-width: 250px) 
+and (max-width: 349px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+    .aboutTitle h1 {
+        font-size: 0.9rem;
+        width: 100%;
+    }
+    .aboutTitle h3 {
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    .missionTextDiv h1 {
+        font-size: 0.8rem;
+    }
+    .missionTextDiv h4 {
+        font-size: 0.9rem;
+    }
+    .missionTextDiv p {
+        font-size: 0.7rem;
+    }
+    .founderQuote {
+        font-size: 0.7rem;
+        width: 90%;
+        padding: 2% 5%;
+        margin-left: 0;
+    }
+    .misionContainer {
+        flex-direction: column;
+        height: auto;
+        position: relative;
+        z-index: auto;
+        top: auto;
+    }
+    .aboutContainer {
+        height: auto;
+    }
+    .missionImgDiv {
+        width: 100%; 
+    }
+    .missionDiv{
+        width: 100%;
+        height: auto;
+        overflow-y: hidden;
+    }
+    .aboutTitle{
+        height: auto;
+        padding: 30%;
+    } 
+    .splide__slide{
+        width: 5%;
+        margin: 0 3%!important;
+    }
+    .containerDiv h1 {
+        margin-bottom: 23%;
+    }
+    .airdropDiv h3 {
+        font-size: 1.4rem;
+    }
+    .meetTeamTitle {
+        font-size: 1rem;
+    }
+}

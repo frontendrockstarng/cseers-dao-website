@@ -3283,15 +3283,23 @@ and (-webkit-min-device-pixel-ratio: 1) {
         justify-content: center;
     }
     .joinMoonBtn {
-        width: 50%;
+        width: 80%;
+        font-size: 0.9rem;
+    }
+    .joinMoonMain {
+        padding-bottom: 10%;
     }
     .footerBtn{
         display: flex;
-        width: 60%;
+        width: 100%;
         margin: 12% 0;
     }
+    .joinCSBtn {
+        font-size: 0.9rem;
+        padding: 4% 5%;
+    }
     .socialMediaDiv{
-        width: 60%;
+        width: 100%;
     }
     .blogPostsDiv {
         flex-wrap: wrap;
@@ -3352,15 +3360,19 @@ and (-webkit-min-device-pixel-ratio: 1) {
     .collabContainer{
         flex-wrap: wrap!important;
     }
-    .footerMenuList{
+    .footerMenuList {
         flex-direction: row;
-        width: 60%;
+        width: 100%;
         margin-bottom: 5%;
+        justify-content: space-between;
     }
     .copyRight {
         flex-direction: column;
         padding: 5% 0;
+        align-items: center;
+        text-align: center;
     }
+
     .fa-heart {
         margin: 4% ;
     }
