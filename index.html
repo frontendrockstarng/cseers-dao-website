@@ -12,6 +12,13 @@
     <link rel="stylesheet" href="./cseers.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+
+    <link rel="stylesheet" href="./sal.js/dist/sal.css">
+    <link rel="stylesheet" href="./@splidejs/splide/dist/css/splide-core.min.css">
+    <script src="./@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="./@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+    <script src="./sal.js/dist/sal.js"></script>
+
 </head>
 <body class="maninBody">
     <a href="#keyPoints" id="fixedAstro" class="fixedAstronaut"><img src="./images/astro-green.png"  alt="" ></a>
@@ -62,52 +69,87 @@
         <div class="containDiv doubleKeyPoints forTop">
             <div class="keyPointNoteDiv">
                 <h3>Project collaborations</h3>
-                <div class="bigKeyNoteDiv"><h1 class="keyNumber" akhi="150">0 </h1><span class="sideSign"> +</span></div>
+                <div class="bigKeyNoteDiv"><h1 class="keyNumber" akhi="2.5">0 </h1><span class="sideSign"> k</span><span class="sideSign"> +</span></div>
             </div>
             <div class="keyPointNoteDiv right ">
                 <h3>Community members</h3>
-                <div class="bigKeyNoteDiv right"><h1 class="keyNumber" akhi="8.6">0 </h1><span class="sideSign"> k</span></div>
+                <div class="bigKeyNoteDiv right"><h1 class="keyNumber" akhi="12">0 </h1><span class="sideSign"> k</span><span class="sideSign"> +</span></div>
             </div>
         </div>
         <div class="singleKeyPoints centerNote">
             <div class="keyPointNoteDiv singleKeyNote">
-                <h3>DAO Total liquidity</h3>
-                <div class="bigKeyNoteDiv"><span class="sideSign"> $</span><h1 class="keyNumber" akhi="18.9">0 </h1><span class="sideSign"> M</span></div>
+                <h3>DAO Members PnL </h3>
+                <div class="bigKeyNoteDiv"><span class="sideSign"> +</span><span class="sideSign"> $</span><h1 class="keyNumber" akhi="5">0 </h1><span class="sideSign"> M</span></div>
             </div>
         </div>
     </section>
 
     <section class="recentCollabs" >
         <img src="./images/roughages-right.png" alt="" class="hangingRecent" data-aos="fade-down" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="1500">
-        <div class="titleDivLeft" data-aos="fade-up"  data-aos-duration="800"><h2 class="sectionTitle cs-white">Recent collabs</h2></div>
+        <div class="titleDivLeft" data-aos="fade-up"  data-aos-duration="800"><h2 class="sectionTitle cs-white">Top collabs</h2></div>
         <div class="collabContainer">
-            <div class="collabProject" data-aos="fade-up"  data-aos-duration="900">
-                <div class="projectPfp" id="projectPfp1"></div>
-                <h3>Gossamer Academy (ETH)</h3>
-                <h4>Ongoing WL (10 spots available)</h4>
-                <p>Giveaway ending by Fri 27th, Nov | 02:32 PM (UTC +1)</p>
-                <p>Mint date: Dec 23, 2022 | 10:00 PM (UTC +1)</p>
-                <a href="" class="projectTwitter"><i></i><p>@gossamer_academy</p></a>
-                <div class="enterGawayDiv"><a href="" class="enterGaway">Enter WL giveaway</a></div>
-            </div>
-            <div class="collabProject" data-aos="fade-up"  data-aos-duration="1400">
-                <div class="projectPfp" id="projectPfp1"></div>
-                <h3>Gossamer Academy (ETH)</h3>
-                <h4>Ongoing WL (10 spots available)</h4>
-                <p>Giveaway ending by Fri 27th, Nov | 02:32 PM (UTC +1)</p>
-                <p>Mint date: Dec 23, 2022 | 10:00 PM (UTC +1)</p>
-                <a href="" class="projectTwitter"><i></i><p>@gossamer_academy</p></a>
-                <div class="enterGawayDiv"><a href="" class="enterGaway">Enter WL giveaway</a></div>
-            </div>
-            <div class="collabProject" data-aos="slide-up"  data-aos-duration="1700">
-                <div class="projectPfp" id="projectPfp1"></div>
-                <h3>Gossamer Academy (ETH)</h3>
-                <h4>Ongoing WL (10 spots available)</h4>
-                <p>Giveaway ending by Fri 27th, Nov | 02:32 PM (UTC +1)</p>
-                <p>Mint date: Dec 23, 2022 | 10:00 PM (UTC +1)</p>
-                <a href="" class="projectTwitter"><i></i><p>@gossamer_academy</p></a>
-                <div class="enterGawayDiv"><a href="" class="enterGaway">Enter WL giveaway</a></div>
-            </div>
+            <section class="splide" aria-label="Splide Basic HTML Example" data-aos="fade-in" data-aos-duration="500">
+                <div class="splide__track">
+                      <ul class="splide__list">
+                          <li class="splide__slide topProjectsContainer">
+                              <div class="pfpContainer"></div>
+                              <a href="https://twitter.com/dtwo_apt">DTWO <i class="fab fa-twitter"></i></a>
+                              <p>Founder</p>
+                          </li>
+                          <li class="splide__slide topProjectsContainer">
+                            <div class="pfpContainer pfp7"></div>
+                            <a href="https://twitter.com/kizzle_04">Kizzle <i class="fab fa-twitter"></i></a>
+                            <p>Co-founder</p>
+                          </li>
+                          <li class="splide__slide topProjectsContainer">
+                            <div class="pfpContainer pfp2"></div>
+                            <a href="https://twitter.com/boyclint3">Boycope <i class="fab fa-twitter"></i></a>
+                            <p>Content director</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp3"></div>
+                            <a href="https://twitter.com/tenibolade">Botefarm <i class="fab fa-twitter"></i></a>
+                            <p>Content writer</p>
+                          </li>
+                          <li class="splide__slide">  
+                            <div class="pfpContainer pfp4"></div>
+                            <a href="https://twitter.com/Rizzy010">Rizzy <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                        </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp5"></div>
+                            <a href="https://twitter.com/peaky_im">Imani <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp6"></div>
+                            <a href="https://twitter.com/Dimsyto">Dimsyto <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp8"></div>
+                            <a href="https://twitter.com/Ifesi37268822">Ifesi <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp9"></div>
+                            <a href="https://twitter.com/UncommonJimmy">Jimmy <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp10"></div>
+                            <a href="https://twitter.com/Aboladejohn_">Johannu Mimo <i class="fab fa-twitter"></i></a>
+                            <p>Community manager</p>
+                          </li>
+                          <li class="splide__slide">
+                            <div class="pfpContainer pfp11"></div>
+                            <a href="https://twitter.com/brysondahcole">Lumi <i class="fab fa-twitter"></i></a>
+                            <p>UX engineer</p>
+                          </li>
+                      </ul>
+                </div>
+              </section>
+           </section>
         </div>
         <div class="collabWusDiv"><a href="#" class="collabBtn">collab with us!</a></div>
     </section>
@@ -280,5 +322,48 @@
         AOS.init();
     </script>
    
+   <script>
+    sal();
+    new Splide( '.splide' ).mount();
+    new Splide( '.splide' ).mount( window.splide.Extensions );
+</script>
+<script>
+    AOS.init();
+</script>
+
+<script>
+ const splide = new Splide( '.splide', {
+ type   : 'loop',
+ drag   : 'free',
+ focus  : 'center',
+ gap    : '1.7rem',
+ perPage: 3,
+ autoScroll: {
+    speed: 1,
+ },
+ breakpoints: {
+640: {
+  perPage: 2,
+  gap    : '3.9rem',
+  height : '20rem',
+},
+480: {
+  perPage: 1,
+  gap    : '3.8rem',
+  height : '18rem',
+},
+350: {
+  perPage: 1,
+  gap    : '6.8rem',
+  height : '18rem',
+},
+},
+} );
+    splide.mount();
+  </script>
+  <script src="./sal.js/dist/sal.js"></script>
+  <script src="./@splidejs/splide/dist/js/splide.min.js"></script>
+  <script src="./@splidejs/splide-extension-auto-scroll/dist/js/splide-extension-auto-scroll.min.js"></script>
+
 </body>
 </html>

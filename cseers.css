@@ -705,6 +705,49 @@ body::-webkit-scrollbar{
     background-image: linear-gradient(180deg, #0CDEFD 0%, #004C5D 99%);
   }
 
+  .topProjectsContainer{
+      background-color: #004C5D!important;
+      width: 30%!important;
+  }
+  .splide__arrow,.splide__pagination {
+    display: none!important;
+}
+.splide__slide{
+    background-color: #121212;
+    padding: 0 5%;
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    text-align: center;
+}
+.splide__slide a{
+    color: #ffffff;
+    font-weight: 400;
+    margin: 5% 0 0 0;
+    text-decoration: none;
+}
+.splide__slide p{
+    color: #b8b8b8;
+    font-weight: 200;
+    margin-top: 2%;
+}
+.splide__slide a:hover{
+    transition: color ease-in-out 0.4s;
+    color: #0CDEFD;
+}
+.splide__slide:focus{
+    transition: background ease-in 0.3s;
+    background: #004C5D;
+}
+.pfpContainer{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 4%;
+}
 
   /*Media Query for landing page 1024-1230*/
 
