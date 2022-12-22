@@ -270,8 +270,6 @@ section{
 }
 .collabContainer{
     width: 100%;
-    display: flex;
-    justify-content: space-between;
     margin-top: 2%;
 }
 .collabProject{
@@ -705,24 +703,26 @@ body::-webkit-scrollbar{
     background-image: linear-gradient(180deg, #0CDEFD 0%, #004C5D 99%);
   }
 
-  .topProjectsContainer{
-      background-color: #004C5D!important;
-      width: 30%!important;
-  }
+  
   .splide__arrow,.splide__pagination {
     display: none!important;
 }
 .splide__slide{
-    background-color: #121212;
-    padding: 0 5%;
+    background: transparent;
+    padding: 1% 5%;
     width: 10%;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    border-radius: 20px;
     text-align: center;
 }
+.splide__slide:hover{
+    transition: all ease-in-out 0.4s;
+    background: #004C5D;
+    border-radius: 25px;
+}
+
 .splide__slide a{
     color: #ffffff;
     font-weight: 400;
@@ -743,10 +743,18 @@ body::-webkit-scrollbar{
     background: #004C5D;
 }
 .pfpContainer{
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
+    width: 150px;
+    height: 150px;
     margin-bottom: 4%;
+}
+.topPfp1,.topPfp2, .topPfp3, .topPfp4{
+    background-position: center!important;
+    background-size: cover!important;
+    background-repeat: no-repeat!important;
+}
+
+.topPfp1{
+    background: url('https://pbs.twimg.com/profile_images/1570028367377752066/kKV08iDr_400x400.jpg');
 }
 
   /*Media Query for landing page 1024-1230*/
