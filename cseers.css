@@ -756,6 +756,12 @@ body::-webkit-scrollbar{
 .topPfp1{
     background: url('https://pbs.twimg.com/profile_images/1570028367377752066/kKV08iDr_400x400.jpg');
 }
+.topPfp2{
+    background: url('https://pbs.twimg.com/profile_images/1525649638774083584/UPn4A3RG_400x400.jpg');
+}
+.topPfp3{
+    background: url('https://pbs.twimg.com/profile_images/1582791364953128960/DouMaVuR_400x400.png');
+}
 
   /*Media Query for landing page 1024-1230*/
 
