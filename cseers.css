@@ -747,7 +747,7 @@ body::-webkit-scrollbar{
     height: 150px;
     margin-bottom: 4%;
 }
-.topPfp1,.topPfp2, .topPfp3, .topPfp4{
+.topPfp1,.topPfp2, .topPfp3, .topPfp4, .topPfp5, .topPfp6, .topPfp7,.topPfp8, .topPfp9, .topPfp10, .topPfp11, .topPfp12, .topPfp13, .topPfp14, .topPfp15, .topPfp16, .topPfp17, .topPfp18{
     background-position: center!important;
     background-size: cover!important;
     background-repeat: no-repeat!important;
@@ -761,6 +761,48 @@ body::-webkit-scrollbar{
 }
 .topPfp3{
     background: url('https://pbs.twimg.com/profile_images/1582791364953128960/DouMaVuR_400x400.png');
+}
+.topPfp4{
+    background: url('https://pbs.twimg.com/profile_images/1599809580233523200/ePiCun_9_400x400.jpg');
+}
+.topPfp5{
+    background: url('https://pbs.twimg.com/profile_images/1537485935742287872/J7wurBKm_400x400.jpg');
+}
+.topPfp6{
+    background: url('https://pbs.twimg.com/profile_images/1563144487601405952/hLqfJ0Vy_400x400.jpg');
+}
+.topPfp7{
+    background: url('https://pbs.twimg.com/profile_images/1581252895663480833/ZwkoKKZc_400x400.jpg');
+}
+.topPfp8{
+    background: url('https://pbs.twimg.com/profile_images/1574468823792717843/07x4FvLX_400x400.jpg');
+}
+.topPfp9{
+    background: url('https://pbs.twimg.com/profile_images/1528740444473016320/oLkAzSuN_400x400.jpg');
+}
+.topPfp10{
+    background: url('https://pbs.twimg.com/profile_images/1599619403074633729/xSdsmLt7_400x400.jpg');
+}
+.topPfp11{
+    background: url('https://pbs.twimg.com/profile_images/1499534972100788225/v1i7HnJk_400x400.jpg');
+}
+.topPfp12{
+    background: url('https://pbs.twimg.com/profile_images/1496965285634617347/1K-qU3pL_400x400.jpg');
+}
+.topPfp13{
+    background: url('https://pbs.twimg.com/profile_images/1518583490400468992/As3Ex4oS_400x400.jpg');
+}
+.topPfp14{
+    background: url('https://pbs.twimg.com/profile_images/1548322474114580481/ucWBmGQZ_400x400.jpg');
+}
+.topPfp15{
+    background: url('https://pbs.twimg.com/profile_images/1565252897532952576/VSMuSKJ-_400x400.jpg');
+}
+.topPfp16{
+    background: url('https://pbs.twimg.com/profile_images/1587885020059815936/9S-jxB9N_400x400.jpg');
+}
+.topPfp17{
+    background: url('https://pbs.twimg.com/profile_images/1585076016086716417/nQWvMhc3_400x400.jpg');
 }
 
   /*Media Query for landing page 1024-1230*/
