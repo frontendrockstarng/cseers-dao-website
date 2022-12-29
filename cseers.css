@@ -625,15 +625,7 @@ footer{
     background-repeat: no-repeat;
     padding: 3% 5% 1% 5%;
 }
-.footContainer{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.footerMenu{
-    width: 50%;
-}
+
 .footerMenuList{
     flex-direction: column;
     align-items:flex-start;
@@ -814,41 +806,8 @@ body::-webkit-scrollbar{
 .topPfp17{
     background: url('https://pbs.twimg.com/profile_images/1585076016086716417/nQWvMhc3_400x400.jpg');
 }
-#mc_embed_signup{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 70%;
-    padding: 5%;
-    margin-bottom: 5%!important;
-    border-radius: 10px;
-    clear:left;
 
-}
-#mc-embedded-subscribe-form{
-    width: 100%;
-}
-.mc-field-group label{
-    color: #ddd;
-    line-height: 2.1rem;
-}
-.required{
-    width: 90%;
-    padding: 2% 5%;
-    background: transparent;
-    border: 1px solid #a7a7a7;
-    margin-bottom: 5%;
-    border-radius: 5px;
-    color: #fff;
-}
-#mc-embedded-subscribe{
-    width: 40%;
-    border: 1px solid #02b9d5;
-    background: linear-gradient(208.81deg, #0CDEFD 36.84%, #004C5D 56.56%, #4B9487 80.37%)!important;
-    padding: 1% 2% ;
-    color: #fff;
-}
+
 
 
   /*Media Query for landing page 1024-1230*/
