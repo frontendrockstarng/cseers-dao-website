@@ -623,7 +623,7 @@ footer{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding: 7% 5% 1% 5%;
+    padding: 3% 5% 1% 5%;
 }
 .footContainer{
     width: 100%;
@@ -638,6 +638,7 @@ footer{
     flex-direction: column;
     align-items:flex-start;
     padding: 0;
+    margin-bottom: 12%;
 }
 .footerMenuList li{
     margin-bottom: 3%;
@@ -650,7 +651,7 @@ footer{
     width: 60%;
     display: flex;
     justify-content: space-between;
-    margin-top: 3%;
+    margin-top: 13%;
 }
 .socialMediaDiv a{
     color: #fff;
@@ -839,6 +840,7 @@ body::-webkit-scrollbar{
     border: 1px solid #a7a7a7;
     margin-bottom: 5%;
     border-radius: 5px;
+    color: #fff;
 }
 #mc-embedded-subscribe{
     width: 40%;
