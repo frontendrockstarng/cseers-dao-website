@@ -564,7 +564,7 @@ section{
 .airdropImg{
     width: 35%;
     padding: 10% 0;
-    background: url('./images/starknet.jfif');
+    background: url('./images/towerswap.jfif');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -572,10 +572,10 @@ section{
 }
 
 .adropbgImg1{
-    background: url('./images/bravoo.jfif');
+    background: url('./images/titi.webp');
 }
 .adropbgImg2{
-    background: url('./images/myswap.png');
+    background: url('./images/mantapay.webp');
 }
 
 .adropbgImg1, .adropbgImg2, .adropbgImg3, .adropbgImg4, .adropbgImg5, .adropbgImg6,footer{
@@ -816,7 +816,8 @@ body::-webkit-scrollbar{
     border-top-right-radius: 15px;
     border-bottom-left-radius: 15px;
     color: white;
-    padding: 2% 8%;
+    padding: 4% 12%;
+    width: 50%;
 }
 
   /*Media Query for landing page 1024-1230*/
