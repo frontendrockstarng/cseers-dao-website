@@ -578,6 +578,10 @@ section{
     background: url('./images/mantapay.webp');
 }
 
+.adropbgImg3{
+    background: url('./images/scroll.jpeg');
+}
+
 .adropbgImg1, .adropbgImg2, .adropbgImg3, .adropbgImg4, .adropbgImg5, .adropbgImg6,footer{
     background-position: center;
     background-size: cover;
