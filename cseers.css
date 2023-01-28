@@ -82,6 +82,9 @@ section{
     transition: color 0.4s ease-in-out;
     color: #0CDEFD;
 }
+.activeMenu{
+    color: #0CDEFD!important;
+}
 .navBtnDiv{
     width: 20%;
     display: flex;
