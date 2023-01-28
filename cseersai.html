@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Play with cseersDAO</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+    <!--font-awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/solid.min.css">
+    <link rel="stylesheet" href="play.css">
+    <link rel="stylesheet" href="./cseers.css">
+</head>
+<body>
+    <section class="mobileNav">
+        <div class="mobilemenuListDiv">
+            <ul class="mobilemenuList">
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://medium.com/@CseersDao">Blog</a></li>
+                <li><a href="./clumsy-Astro-master/index.html">Play</a></li>
+                <li><a href="./cseersai.html">CSeersAI</a></li>
+            </ul>
+        </div>
+        <div class="mobilenavBtnDiv">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRGohHwZRw37WIHeX5_jQU1kE-g_IS2mRzATIJLI4Aop7_8Q/viewform?usp=pp_url" class="joinCSBtn" target="_blank">Join CSeersDAO</a>
+        </div>
+    </section>
+    <nav class="navBar" id="navBar">
+        <a href="#" class="cseersdaoLogoDiv"><img src="./images/cseersdaoLogo.png" alt="csserdao logo"/></a>
+        <div class="menuListDiv">
+            <ul class="menuList">
+                <li><a href="about.html">About</a></li>
+                <li><a href="https://medium.com/@CseersDao">Blog</a></li>
+                <li><a href="./clumsy-Astro-master/index.html">Play</a></li>
+                <li><a href="./cseersai.html">CSeersAI</a></li>
+            </ul>
+        </div>
+        <div class="navBtnDiv">
+            <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRGohHwZRw37WIHeX5_jQU1kE-g_IS2mRzATIJLI4Aop7_8Q/viewform?usp=pp_url" target="_blank" class="joinCSBtn">Join CSeersDAO</a>
+        </div>
+        <div class="mobileNavBtn">
+            <div class="lineBar" id="topLineBar"></div>
+            <div class="lineBar middleLineBar"></div>
+            <div class="lineBar" id="bottomLineBar"></div>
+        </div>
+    </nav>
+
+    <section class="gamePlay">
+        <iframe  src="https://cseers-ai-bot.vercel.app/" class="csDaoBot"></iframe> 
+    </section>
+    
+
+    <footer>
+        <div class="footContainer">
+            <div class="footerMenu">
+                <ul class="menuList footerMenuList">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="https://medium.com/@CseersDao">Blog</a></li>
+                    <li><a href="./clumsy-Astro-master/index.html">Play</a></li>
+                    <li><a href="./cseersai.html">CSeersAI</a></li>
+                </ul>
+                
+                <div class="footerBtn">
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSdRGohHwZRw37WIHeX5_jQU1kE-g_IS2mRzATIJLI4Aop7_8Q/viewform?usp=pp_url" target="_blank" class="footerJoinBtn">Join CSeersDAO</a>
+                </div>
+                <div class="socialMediaDiv">
+                    <a href="https://twitter.com/CseersDao"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                    <a href="https://medium.com/@CseersDao"><i class="fab fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyRight">© CSeersDAO. All rights reserved. Made with <i class="fas fa-heart"> by</i>  <a href="https://twitter.com/iamlumiwon"> dukedan</a></div>
+    </footer>
+
+    <script>
+        window.addEventListener("scroll",function(){
+            if(this.window.scrollY>=100){
+                this.document.getElementById("navBar").style.background = "#191919"
+            }
+            else{
+                this.document.getElementById("navBar").style.background = "transparent"
+            }
+        })
+    </script>
+
+</body>
+</html>
